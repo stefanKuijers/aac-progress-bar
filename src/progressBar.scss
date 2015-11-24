@@ -1,0 +1,22 @@
+
+.progress-bar-wrapper {
+	position: relative;
+
+	.progress-bar {
+		position: absolute;
+		margin: 4px 13px;
+		height: 2px;
+		width: 0%;
+		background-color: $brand-primary;
+
+		transition: all 0.3s ease-out;
+
+		&.pb-medium { background-color: #F0E44E; }
+		&.pb-high { background-color: #f0ad4e; }
+		&.pb-max { background-color: #F0734E; }
+
+		& + textarea {
+			padding-top: 10px;
+		}
+	}
+}
